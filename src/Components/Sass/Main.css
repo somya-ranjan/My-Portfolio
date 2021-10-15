@@ -1,0 +1,694 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  -webkit-box-shadow: -17px 10px 23px -19px rgba(0, 0, 0, 0.3);
+          box-shadow: -17px 10px 23px -19px rgba(0, 0, 0, 0.3);
+  background-color: aliceblue  !important;
+}
+
+.navbar {
+  background-color: #e8ebf1;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.navbar img {
+  width: 30rem;
+}
+
+.navbar ul {
+  margin-right: 5rem;
+}
+
+.navbar ul li {
+  margin-left: 2rem !important;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+  margin-left: .5rem;
+}
+
+.navbar ul li a {
+  display: inline-block;
+  color: #000 !important;
+  font-weight: 500;
+  cursor: pointer;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.nav-item > .active {
+  border-bottom: 3px solid #333;
+}
+
+@media only screen and (max-width: 1025px) {
+  .navbar {
+    padding: 2rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 811px) {
+  .navbar {
+    z-index: 5;
+    padding: 2rem 5rem;
+  }
+  .navbar button {
+    font-size: 4rem;
+    outline: none !important;
+    border: none;
+  }
+  .navbar ul {
+    text-align: center;
+    padding: 5rem 0;
+  }
+  .navbar ul li {
+    font-size: 4rem;
+    padding: 3rem 0;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .navbar {
+    padding: 3rem 5rem;
+  }
+  .navbar button {
+    font-size: 5rem;
+  }
+}
+
+.mainBgSection {
+  background-color: #e8ebf1;
+  height: 90vh;
+}
+
+.mainBgSection .mainBgContent {
+  padding: 5rem 0 10rem 0;
+}
+
+.mainBgSection .mainBgContent .textAnimation {
+  margin-top: 10rem;
+  z-index: 2;
+}
+
+.mainBgSection .mainBgContent .textAnimation h1 {
+  font-size: 10rem;
+  color: #FF0000;
+  font-weight: 500;
+}
+
+.mainBgSection .mainBgContent .textAnimation h2 {
+  font-size: 6rem;
+  color: #008a17;
+  font-weight: 600;
+}
+
+.mainBgSection .mainBgContent .textAnimation button {
+  border: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  margin-top: 2rem;
+  background-color: orangered;
+  border-radius: 1rem;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.mainBgSection .mainBgContent .textAnimation button:hover {
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0px 1px 5px 1px #adadad;
+          box-shadow: 0px 1px 5px 1px #adadad;
+}
+
+.mainBgSection .mainBgContent .textAnimation button a {
+  color: whitesmoke;
+  text-decoration: none;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.mainBgSection .mainBgContent .textAnimation button:hover a {
+  color: orangered;
+}
+
+.mainBgSection .mainBgContent .mainBgImg {
+  position: fixed;
+  top: 5%;
+  right: 3%;
+}
+
+@media only screen and (max-width: 1025px) {
+  html {
+    font-size: 43%;
+  }
+  .mainBgSection {
+    height: 45vh;
+  }
+  .mainBgSection .mainBgContent .textAnimation {
+    margin-top: 15rem;
+  }
+}
+
+@media only screen and (max-width: 811px) {
+  html {
+    font-size: 32%;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  html {
+    font-size: 17%;
+  }
+  .mainBgSection {
+    height: 30vh;
+  }
+  .mainBgSection .mainBgContent .textAnimation {
+    margin-top: 20rem;
+  }
+}
+
+.aboutSection {
+  background-color: #FEF9EF;
+  position: relative;
+  z-index: 2;
+}
+
+.aboutSection .aboutSectionContent {
+  padding: 3rem 0 5rem 0;
+}
+
+.aboutSection .aboutSectionContent h1 {
+  z-index: 1;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.aboutSection .aboutSectionContent .tabs .MuiTabs-indicator {
+  background-color: red;
+}
+
+.aboutSection .aboutSectionContent .tabs .tab {
+  font-size: 2rem;
+  color: red;
+  margin-right: 5rem;
+  width: 12rem;
+}
+
+.aboutSection .aboutSectionContent .tabContent {
+  margin-top: 2rem;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabAboutContent li {
+  text-align: justify;
+  font-size: 2rem;
+  color: #334756;
+  margin-bottom: 1rem;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .html, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .css, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .javaScript, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .bootStrtap, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .jQuery, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .sass, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .react {
+  margin-bottom: 6rem;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .html i, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .css i, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .javaScript i, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .bootStrtap i, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .jQuery i, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .sass i, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .react i {
+  font-size: 5rem;
+  float: left;
+  margin: -2rem 3rem 0 0;
+  color: #E44D26;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .html .progress, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .css .progress, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .javaScript .progress, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .bootStrtap .progress, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .jQuery .progress, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .sass .progress, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .react .progress {
+  margin-top: 2rem;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .html .progress .progress-bar, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .css .progress .progress-bar, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .javaScript .progress .progress-bar, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .bootStrtap .progress .progress-bar, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .jQuery .progress .progress-bar, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .sass .progress .progress-bar, .aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .react .progress .progress-bar {
+  font-size: 1rem;
+  width: 80%;
+  background-color: #E44D26;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .css i {
+  color: #0070BA;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .css .progress .progress-bar {
+  width: 70%;
+  background-color: #0070BA;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .javaScript i {
+  color: #63A814;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .javaScript .progress .progress-bar {
+  width: 65%;
+  background-color: #63A814;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .bootStrtap i {
+  color: #713CBD;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .bootStrtap .progress .progress-bar {
+  width: 70%;
+  background-color: #713CBD;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .jQuery img {
+  width: 5rem;
+  float: left;
+  margin: -2rem 2rem 0 0;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .jQuery .progress .progress-bar {
+  width: 70%;
+  background-color: #0492e4;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .sass i {
+  font-size: 3.8rem;
+  margin: -1.5rem 2.5rem 0 0;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .sass .progress .progress-bar {
+  width: 65%;
+  background-color: #fa6400;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .react i {
+  color: #04A5CD;
+  margin-right: 2.5rem;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabSkilContent .react .progress .progress-bar {
+  width: 60%;
+  background-color: #04A5CD;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabContactContent h2 {
+  margin-bottom: 3rem;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabContactContent h2 i {
+  font-size: 4rem;
+  margin-right: 2rem;
+  position: relative;
+  top: 1rem;
+  color: #fa1d00;
+}
+
+.aboutSection .aboutSectionContent .tabContent .react-swipeable-view-container .tabContactContent h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 1025px) {
+  .aboutSectionContent h1 {
+    font-size: 6.5rem !important;
+  }
+  .tab {
+    font-size: 2.5rem !important;
+  }
+  .tabAboutContent li {
+    font-size: 2.3rem !important;
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 811px) {
+  .tab {
+    font-size: 3rem !important;
+  }
+  .tabAboutContent li {
+    font-size: 2.4rem !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .aboutSectionContent h1 {
+    font-size: 7rem !important;
+  }
+  .tabs {
+    width: 100rem;
+  }
+  .tabs .MuiTabs-indicator {
+    top: 14.5rem;
+  }
+  .tabs .tab {
+    font-size: 5rem !important;
+    margin-right: 1rem !important;
+  }
+  .tabContent {
+    margin-top: 5rem !important;
+  }
+  .tabContent li {
+    margin-left: 1rem;
+    font-size: 3.7rem !important;
+    margin-bottom: 3rem !important;
+  }
+  .tabSkilContent .html, .tabSkilContent .css, .tabSkilContent .javaScript, .tabSkilContent .bootStrtap, .tabSkilContent .jQuery, .tabSkilContent .sass, .tabSkilContent .react {
+    margin-bottom: 10rem !important;
+  }
+  .tabSkilContent .html i, .tabSkilContent .css i, .tabSkilContent .javaScript i, .tabSkilContent .bootStrtap i, .tabSkilContent .jQuery i, .tabSkilContent .sass i, .tabSkilContent .react i {
+    font-size: 8rem !important;
+    margin: -4rem 5rem 0 0 !important;
+  }
+  .tabSkilContent .html .progress, .tabSkilContent .css .progress, .tabSkilContent .javaScript .progress, .tabSkilContent .bootStrtap .progress, .tabSkilContent .jQuery .progress, .tabSkilContent .sass .progress, .tabSkilContent .react .progress {
+    height: 1.5rem;
+    margin-top: 3rem !important;
+  }
+  .tabSkilContent .html .progress .progress-bar, .tabSkilContent .css .progress .progress-bar, .tabSkilContent .javaScript .progress .progress-bar, .tabSkilContent .bootStrtap .progress .progress-bar, .tabSkilContent .jQuery .progress .progress-bar, .tabSkilContent .sass .progress .progress-bar, .tabSkilContent .react .progress .progress-bar {
+    font-size: 1.5rem !important;
+  }
+  .tabSkilContent .jQuery {
+    margin: -1rem 0 0 -1rem !important;
+  }
+  .tabSkilContent .jQuery img {
+    width: 9rem !important;
+    margin: -3rem 4rem 0 0 !important;
+  }
+  .tabSkilContent .sass {
+    margin-top: 10rem !important;
+  }
+  .tabSkilContent .sass i {
+    font-size: 3.8rem;
+    margin: -3rem 2.5rem 0 0 !important;
+  }
+  .tabContactContent h2 {
+    margin-bottom: 5rem !important;
+    font-size: 5rem;
+  }
+  .tabContactContent h2 i {
+    font-size: 6rem !important;
+  }
+}
+
+.portFolioSection {
+  background-color: #F4F9F9;
+  position: relative;
+  z-index: 2;
+}
+
+.portFolioSection .portFolioSectionContent {
+  padding: 2rem 0 3rem 0;
+}
+
+.portFolioSection .portFolioSectionContent h1 {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.portFolioSection .portFolioSectionContent .row .col-10 {
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: .7rem;
+}
+
+.portFolioSection .portFolioSectionContent .row .col-10 img {
+  width: 100%;
+  height: 30rem;
+  -webkit-transition: .6s all ease-in-out;
+  transition: .6s all ease-in-out;
+  border-radius: .7rem;
+}
+
+.portFolioSection .portFolioSectionContent .row .col-10 .layer {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(22%, rgba(0, 0, 0, 0.9)), color-stop(43%, rgba(34, 9, 9, 0.9)), to(rgba(159, 13, 13, 0.7)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 22%, rgba(34, 9, 9, 0.9) 43%, rgba(159, 13, 13, 0.7) 100%);
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: .6s all ease-in-out;
+  transition: .6s all ease-in-out;
+}
+
+.portFolioSection .portFolioSectionContent .row .col-10 .layer h2 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  -webkit-transition: .6s all;
+  transition: .6s all;
+  color: #fefeff;
+  font-weight: 600;
+}
+
+.portFolioSection .portFolioSectionContent .row .col-10:hover .layer {
+  opacity: 1;
+}
+
+.portFolioSection .portFolioSectionContent .row .col-10:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.portFolioSection .portFolioSectionContent .row .col-10:hover h2 {
+  opacity: 1;
+  bottom: 40%;
+}
+
+@media only screen and (max-width: 1025px) {
+  .portFolioSection h1 {
+    font-size: 6.5rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .portFolioSection .row .col-10 img {
+    height: 35rem !important;
+  }
+}
+
+@media only screen and (max-width: 811px) {
+  .portFolioSection .row .col-10 img {
+    height: 40rem !important;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .portFolioSection .row .col-10 {
+    margin-bottom: 3rem !important;
+  }
+  .portFolioSection .row .col-10 img {
+    height: 70rem !important;
+  }
+}
+
+.contactSection {
+  background-color: aliceblue;
+  position: relative;
+  z-index: 1;
+}
+
+.contactSection .contactSectionContent {
+  padding: 2rem 0;
+}
+
+.contactSection .contactSectionContent h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.contactSection .contactSectionContent h2 {
+  font-weight: 600;
+  color: gray;
+}
+
+.contactSection .contactSectionContent h2 span {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.contactSection .contactSectionContent form {
+  padding: 2rem 0;
+}
+
+.contactSection .contactSectionContent form .form-group {
+  margin-bottom: 1.4rem;
+}
+
+.contactSection .contactSectionContent form .invalid-feedback {
+  font-size: 1.5rem;
+}
+
+.contactSection .contactSectionContent form input {
+  font-size: 2rem;
+  height: 5rem;
+  border-radius: .3rem;
+}
+
+.contactSection .contactSectionContent form textarea {
+  height: 12rem;
+  font-size: 1.8rem;
+  word-wrap: break-word;
+}
+
+.contactSection .contactSectionContent form button {
+  font-size: 3rem;
+  padding: .7rem 5rem;
+  outline: none;
+  margin: 2rem 0;
+  background-color: skyblue;
+  border-radius: 3rem;
+  border: none;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.contactSection .contactSectionContent form button:hover {
+  background-color: aliceblue;
+  color: #3DB2FF;
+  -webkit-box-shadow: 0px 0px 5px 0px #b6b6b6;
+          box-shadow: 0px 0px 5px 0px #b6b6b6;
+}
+
+@media only screen and (max-width: 1025px) {
+  .contactSection .contactSectionContent h1 {
+    font-size: 6.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 811px) {
+  .contactSection .contactSectionContent form .form-group {
+    margin-bottom: 1.4rem;
+  }
+  .contactSection .contactSectionContent form .invalid-feedback {
+    font-size: 2rem;
+  }
+  .contactSection .contactSectionContent form input {
+    font-size: 3rem;
+    height: 6.5rem;
+    border-radius: .3rem;
+  }
+  .contactSection .contactSectionContent form textarea {
+    height: 15rem;
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .contactSectionContent img {
+    padding: 2rem 0 5rem 0;
+  }
+}
+
+.footerSection {
+  background-color: #334756;
+  position: relative;
+  z-index: 1;
+}
+
+.footerSection .footerSectionContent {
+  padding: 1rem 0;
+}
+
+.footerSection .footerSectionContent .logo img {
+  width: 20rem;
+}
+
+.footerSection .footerSectionContent .socialMedia {
+  text-align: end;
+}
+
+.footerSection .footerSectionContent .socialMedia a i {
+  font-size: 2rem;
+  margin-left: 2rem;
+  padding: 1.2rem 1.3rem;
+  border: .3rem solid #ffff;
+  border-radius: 50%;
+  color: #F4F9F9;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+.footerSection .footerSectionContent .socialMedia a:nth-child(1) i {
+  padding: 1.2rem 1.6rem;
+}
+
+.footerSection .footerSectionContent .socialMedia a:nth-child(1) i:hover {
+  background-color: #165aeb;
+  border: .3rem solid #165aeb;
+}
+
+.footerSection .footerSectionContent .socialMedia a:nth-child(2) i:hover {
+  background-color: #0e76a8;
+  border: .3rem solid #0e76a8;
+}
+
+.footerSection .footerSectionContent .socialMedia a:nth-child(3) i:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border: .3rem solid #bc1888;
+}
+
+.footerSection .footerSectionContent .socialMedia a:nth-child(4) i:hover {
+  background-color: #1DA1F2;
+  border: .3rem solid #1DA1F2;
+}
+
+.footerSection .footerSectionContent .copyRight h4 {
+  text-align: end;
+  margin-right: 2rem;
+  color: gray;
+  font-size: 1.7rem;
+}
+
+.scrolBtn {
+  position: fixed;
+  z-index: 1000;
+  bottom: 1rem;
+  right: 2rem;
+  cursor: pointer;
+  display: none;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.scrolBtn a i {
+  font-size: 6.5rem;
+  color: red;
+}
+
+.scrolBtn:hover {
+  padding-bottom: 2rem;
+}
+
+.scrollToTop {
+  display: block;
+}
+
+@media only screen and (max-width: 428px) {
+  .scrolBtn a i {
+    font-size: 10rem;
+    color: red;
+  }
+}
+
+.swal2-popup {
+  font-size: 2rem !important;
+}
+/*# sourceMappingURL=Main.css.map */
