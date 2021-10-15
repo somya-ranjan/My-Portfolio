@@ -20,7 +20,7 @@ function MainBg() {
                             ]}
                         />
                     </h2>
-                    <button> <a href="https://drive.google.com/file/d/184tdLCNzjzQo8rgDMw4dHUCRP081B0Vl/view?usp=sharing" target="_blank" rel="noopener noreferrer">My Resume</a> </button>
+                    <button> <a href="https://drive.google.com/file/d/1AV3tK-U76pHoZa5lH6ykzRAHc3D78hkW/view?usp=sharing" target="_blank" rel="noopener noreferrer">My Resume</a> </button>
                 </div>
                 <div data-aos="slide-left" className="col-6 mainBgImg">
                     <img src="media/my.png" alt="" className="img-fluid"/>
