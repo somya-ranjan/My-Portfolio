@@ -145,6 +145,39 @@ html {
   color: orangered;
 }
 
+.mainBgSection .mainBgContent .textAnimation span {
+  position: relative;
+  top: 1rem;
+}
+
+.mainBgSection .mainBgContent .textAnimation span .gitHub {
+  margin: 0 1rem 0 4rem;
+}
+
+.mainBgSection .mainBgContent .textAnimation span .gitHub i {
+  font-size: 4.5rem;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+.mainBgSection .mainBgContent .textAnimation span .gitHub:hover i {
+  color: orangered;
+}
+
+.mainBgSection .mainBgContent .textAnimation span .linkedIn {
+  margin: 0 0 0 2rem;
+}
+
+.mainBgSection .mainBgContent .textAnimation span .linkedIn i {
+  font-size: 4.5rem;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+.mainBgSection .mainBgContent .textAnimation span .linkedIn:hover i {
+  color: orangered;
+}
+
 .mainBgSection .mainBgContent .mainBgImg {
   position: fixed;
   top: 5%;
