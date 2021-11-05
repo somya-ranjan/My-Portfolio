@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .scrolled {
@@ -108,12 +109,16 @@ html {
   font-size: 10rem;
   color: #FF0000;
   font-weight: 500;
+  text-shadow: 0.7rem 0.7rem 1rem rgba(0, 0, 0, 0.3);
+  font-family: 'Kalam', cursive;
 }
 
 .mainBgSection .mainBgContent .textAnimation h2 {
   font-size: 6rem;
   color: #008a17;
   font-weight: 600;
+  text-shadow: 0.7rem 0.7rem 1rem rgba(0, 0, 0, 0.3);
+  font-family: 'Sofia', cursive;
 }
 
 .mainBgSection .mainBgContent .textAnimation button {
@@ -148,6 +153,11 @@ html {
 .mainBgSection .mainBgContent .textAnimation span {
   position: relative;
   top: 1rem;
+}
+
+.mainBgSection .mainBgContent .textAnimation span i {
+  -webkit-filter: drop-shadow(0.35rem 0.35rem 0.2rem rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0.35rem 0.35rem 0.2rem rgba(0, 0, 0, 0.5));
 }
 
 .mainBgSection .mainBgContent .textAnimation span .gitHub {
@@ -194,6 +204,9 @@ html {
   .mainBgSection .mainBgContent .textAnimation {
     margin-top: 15rem;
   }
+  .mainBgSection .mainBgContent .textAnimation h1 {
+    font-weight: 600;
+  }
 }
 
 @media only screen and (max-width: 811px) {
@@ -228,7 +241,8 @@ html {
   z-index: 1;
   font-size: 5rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Allerta Stencil', sans-serif;
 }
 
 .aboutSection .aboutSectionContent .tabs .MuiTabs-indicator {
@@ -444,8 +458,9 @@ html {
 .portFolioSection .portFolioSectionContent h1 {
   font-size: 5rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 2rem;
+  font-family: 'Allerta Stencil', sans-serif;
 }
 
 .portFolioSection .portFolioSectionContent .row .col-10 {
@@ -544,7 +559,8 @@ html {
   text-align: center;
   padding-bottom: 2rem;
   font-size: 5rem;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Allerta Stencil', sans-serif;
 }
 
 .contactSection .contactSectionContent h2 {
