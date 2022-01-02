@@ -20,7 +20,7 @@ function MainBg() {
                             ]}
                         />
                     </h2>
-                    <button> <a href="https://drive.google.com/file/d/11z0RRY_8NCNMf8EQ73DLx-mPzJAGrS32/view?usp=sharing" target="_blank" rel="noopener noreferrer">My Resume</a> </button>
+                    <button> <a href="https://drive.google.com/file/d/1ns_PdhOyj_89Aadec2hBzE3niF-PsqYA/view?usp=sharing" target="_blank" rel="noopener noreferrer">My Resume</a> </button>
 
                     <span>
                         <a href="https://github.com/somya-ranjan" target="_blank" rel="noopener noreferrer" className="gitHub">
